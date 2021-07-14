@@ -1,0 +1,162 @@
+/***---google font poppins---***/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+/*-----body part-----*/
+body{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+}
+
+/*---header styles---*/
+
+.header{
+    background-color:rgb(18, 18, 175);
+} 
+.header-section{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 102px;
+    font-size: 30px;
+    padding: 80px 135px;
+    color: #FFFFFF; 
+}
+.banner-text a{
+    text-decoration: none;
+    width:88px;
+    padding: 10px 24px;
+    font-size: 16px;
+    color:#FFFFFF;
+    background: #E02C6D;
+}
+.banner-text span{
+    padding-left: 8px;
+}
+.banner-image{
+    width: 556px;
+    height: 438px;
+}
+/***hover with transition***/
+ header :hover .banner-image{
+     transform:rotate(45deg);
+     transition: transform 1s;
+}
+
+/*---players css---*/
+.container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px;
+    margin-top: 56px;
+    margin-left:130px;
+    margin-right: 210px;
+}
+.player{
+   width:300px;
+   background: #FFFFFF;
+   padding: 15px;
+   box-shadow: 0 .2em .4em rgba(0,0,0,.4);
+}
+.player img{
+    width: 300px;
+    height: 256px;
+    border-radius: 5px;
+}
+.player h1{
+    color: #18191F;
+    font-size: 28px;
+}
+.player p{
+    color: #6C6C6C;
+    font-size: 15px;
+}
+
+/* login form */
+.frame-container{
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+    background-color: rgb(117, 119, 253);
+    border-radius: 5px;
+}
+.login-form{
+    display: flex;
+    flex-direction:column;
+    background-color: gray;
+    border-radius: 5px;
+    padding: 5px;
+}
+.login-form input, button {
+    font-size: 1.3em;
+    margin-top: 15px;
+    padding-left: 12px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+.login-form button {
+    background-color: orangered;
+    color: papayawhip;
+    font-weight: 800;
+    padding: 5px;
+    border: 0;
+}
+
+/* photo frame */
+.photo-frame{
+    width: 500px;
+    height: 200px;
+    border: 3px solid rebeccapurple;
+    border-radius: 15px;
+    /* position: relative; */
+    margin: 10px;
+    overflow: hidden;
+}
+.photo img{
+    width: 100%;
+    border-radius: 10px;
+}
+.photo-frame:hover .photo{
+    transform:scale(2.0) skew(30deg);
+    transition: transform 2s ease-in-out;
+}
+
+/* Footer is here */
+.footer{
+    margin-top: 130px;
+    text-align: center;
+}
+.logo{
+    width: 480px;
+    height: 110px;
+}
+.icons{
+    text-decoration: none;
+    color: #969BAB;
+    font-size: 32px;
+}
+
+/*---- @Media Queries-----*/
+
+/***Mobile Devices***/
+@media only screen and (max-width:688px) {
+    .banner-text, .banner-image{
+        width:100%;
+        height: auto;
+    }
+    .header-section, .container, .footer{
+        grid-template-columns: repeat(1, 1fr);
+        
+    }
+}
+
+/*** tablet devices***/
+
+@media only screen and (min-width:668px) and (max-width:992px) {
+    .header-section{
+        grid-template-columns: repeat(1, 1fr);
+}
+    .container{
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+}
+
+
